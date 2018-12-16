@@ -3,3 +3,7 @@
 *.pdf
 *.swp
 *.swo
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.toc
