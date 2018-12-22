@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage{{amsmath}}
+\begin{document}
+Add $a$ squared and $b$ squared
+to get $c$ squared. Or, using
+a more mathematical approach
+\begin{equation}
+    a^2 + b^2 = c^2
+\end{equation}
+Einstein says
+\begin{equation}
+    E = mc^2 \label{clever}
+\end{equation}
+He didn't say
+\begin{equation}
+    1 + 1 = 3 \tag{dumb}
+\end{equation}
+This is a reference to \eqref{clever}.
+
+
+Add $a$ squared and $b$ squared
+to get $c$ squared. Or, using
+a more mathematical approach
+ \begin{equation*}
+   a^2 + b^2 = c^2
+ \end{equation*}
+or you can type less for the
+same effect:
+ \[ a^2 + b^2 = c^2 \]
+
+ This is text style:
+$\lim_{n \to \infty}
+ \sum_{k=1}^n \frac{1}{k^2}
+ = \frac{\pi^2}{6}$.
+And this is display style:
+ \begin{equation}
+  \lim_{n \to \infty}
+  \sum_{k=1}^n \frac{1}{k^2}
+  = \frac{\pi^2}{6}
+ \end{equation}
+\end{document}

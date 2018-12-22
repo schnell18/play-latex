@@ -63,7 +63,7 @@
 </stylenode>
 </map_styles>
 </hook>
-<hook NAME="AutomaticEdgeColor" COUNTER="2" RULE="ON_BRANCH_CREATION"/>
+<hook NAME="AutomaticEdgeColor" COUNTER="3" RULE="ON_BRANCH_CREATION"/>
 <node TEXT="history" POSITION="right" ID="ID_1039848762" CREATED="1544926711942" MODIFIED="1544926733076">
 <edge COLOR="#ff0000"/>
 <node TEXT="Donald" ID="ID_1039230591" CREATED="1544926734090" MODIFIED="1544926758780"/>
@@ -85,8 +85,103 @@
 <node TEXT="document class" ID="ID_1305217878" CREATED="1544926825916" MODIFIED="1544926836614">
 <node TEXT="article" ID="ID_813761898" CREATED="1544926837572" MODIFIED="1544926842133"/>
 <node TEXT="report" ID="ID_1314690111" CREATED="1544926842700" MODIFIED="1544926846014"/>
-<node TEXT="book" ID="ID_1763464121" CREATED="1544926846571" MODIFIED="1544926848205"/>
+<node TEXT="book" ID="ID_1763464121" CREATED="1544926846571" MODIFIED="1544926848205">
+<node TEXT="structure" ID="ID_579850182" CREATED="1544927342276" MODIFIED="1544927350435">
+<node ID="ID_179233103" CREATED="1544927351224" MODIFIED="1544927406898"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <div class="page" title="Page 70">
+      <div class="layoutArea">
+        <div class="column">
+          <pre><span style="font-size: 9.000000pt; font-family: LucidaSans"><font size="9.000000pt" face="LucidaSans"> \frontmatter</font></span></pre>
+          <p>
+            <span style="font-size: 9.000000pt; font-family: LucidaBright; font-style: italic"><font size="9.000000pt" face="LucidaBright"><i>preface, table of contents </i></font></span>
+          </p>
+          <p>
+            <span style="font-size: 9.000000pt; font-family: LucidaSans"><font size="9.000000pt" face="LucidaSans">\mainmatter </font></span>
+          </p>
+          <p>
+            <span style="font-size: 9.000000pt; font-family: LucidaBright; font-style: italic"><font size="9.000000pt" face="LucidaBright"><i>main body of text </i></font></span>
+          </p>
+          <p>
+            <span style="font-size: 9.000000pt; font-family: LucidaSans"><font size="9.000000pt" face="LucidaSans">\backmatter </font></span>
+          </p>
+          <p>
+            <span style="font-size: 9.000000pt; font-family: LucidaBright; font-style: italic"><font size="9.000000pt" face="LucidaBright"><i>bibliography, index, colophon </i></font></span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+</richcontent>
 </node>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="appearance" POSITION="left" ID="ID_398508221" CREATED="1544929391732" MODIFIED="1544929396836">
+<edge COLOR="#00ff00"/>
+<node TEXT="font" ID="ID_673197887" CREATED="1544929397154" MODIFIED="1544929398500">
+<node TEXT="font size" ID="ID_809100880" CREATED="1544929398930" MODIFIED="1544929403284">
+<node ID="ID_27579538" CREATED="1544929403618" MODIFIED="1544929548585"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <div class="page" title="Page 76">
+      <div class="layoutArea">
+        <div class="column">
+          <p>
+            <span style="font-size: 9.000000pt; font-family: LucidaSans"><font size="9.000000pt" face="LucidaSans">\tiny </font></span><span style="font-size: 5.000000pt; font-family: LucidaBright"><font size="5.000000pt" face="LucidaBright">smallest </font></span><span style="font-size: 9.000000pt; font-family: LucidaSans"><font size="9.000000pt" face="LucidaSans">\scriptsize </font></span><span style="font-size: 7.000000pt; font-family: LucidaBright"><font size="7.000000pt" face="LucidaBright">very small </font></span><span style="font-size: 9.000000pt; font-family: LucidaSans"><font size="9.000000pt" face="LucidaSans">\footnotesize </font></span><span style="font-size: 8.000000pt; font-family: LucidaBright"><font size="8.000000pt" face="LucidaBright">smaller </font></span><span style="font-size: 9.000000pt; font-family: LucidaSans"><font size="9.000000pt" face="LucidaSans">\small </font></span><span style="font-size: 9.000000pt; font-family: LucidaBright"><font size="9.000000pt" face="LucidaBright">small </font></span><span style="font-size: 9.000000pt; font-family: LucidaSans"><font size="9.000000pt" face="LucidaSans">\normalsize </font></span><span style="font-size: 9.000000pt; font-family: LucidaBright"><font size="9.000000pt" face="LucidaBright">normal </font></span><span style="font-size: 9.000000pt; font-family: LucidaSans"><font size="9.000000pt" face="LucidaSans">\large </font></span><span style="font-size: 11.000000pt; font-family: LucidaBright"><font size="11.000000pt" face="LucidaBright">large </font></span>
+          </p>
+        </div>
+        <div class="column">
+          <p>
+            <span style="font-size: 9.000000pt; font-family: LucidaSans"><font size="9.000000pt" face="LucidaSans">\Large </font></span><span style="font-size: 13.000000pt; font-family: LucidaBright"><font size="13.000000pt" face="LucidaBright">larger<br/></font></span><span style="font-size: 9.000000pt; font-family: LucidaSans"><font size="9.000000pt" face="LucidaSans">\LARGE </font></span><span style="font-size: 16.000000pt; font-family: LucidaBright"><font size="16.000000pt" face="LucidaBright">evenlarger </font></span>
+          </p>
+        </div>
+      </div>
+      <div class="layoutArea">
+        <div class="column">
+          <p>
+            <span style="font-size: 9.000000pt; font-family: LucidaSans"><font size="9.000000pt" face="LucidaSans">\huge </font></span><span style="font-size: 19.000000pt; font-family: LucidaBright"><font size="19.000000pt" face="LucidaBright">still larger</font></span>
+          </p>
+          <p>
+            <span style="font-size: 9.000000pt; font-family: LucidaSans"><font size="9.000000pt" face="LucidaSans">\Huge</font></span>
+          </p>
+          <div class="page" title="Page 76">
+            <div class="layoutArea">
+              <div class="column">
+                <p>
+                  <span style="font-size: 22.000000pt; font-family: LucidaBright"><font size="22.000000pt" face="LucidaBright">largest </font></span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <p>
+            
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+</node>
+<node TEXT="table" ID="ID_881278376" CREATED="1544934754231" MODIFIED="1544934756288"/>
 </node>
 </node>
 </map>
