@@ -1,0 +1,390 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass{article}
+\usepackage{ctex}
+\usepackage{fontspec,xltxtra,xunicode,xeCJK}
+\usepackage{verbatim}
+\usepackage{caption}
+\usepackage{latexsym}
+
+\begin{document}
+    The derivative of the indirect function $f[g(x)]$ is $\{f[g(x)]\}' = f'[g(x)]g'(x)$.
+    For the second derivative of the product of $f(x)$ and $g(x)$ on has $[f(x)g(x)]'' = f''(x)g(x) + 2f'(x)g'(x) + f(x)g''(x)$.
+    
+    $\frac{1}{x+y}$
+
+    $\frac{a^2 - b^2}{a+b}=a-b$
+    
+    $\frac{\frac{a}{x-y} + \frac{b}{x+y}}{1+\frac{a-b}{a+b}}$
+
+    $\sqrt{a}$
+
+
+    $\sqrt{x^2+y^2+2xy}=x+y$
+
+    $\sqrt[n]{\frac{x^n-y^n}{1+u^{2n}}}$
+
+    $\sqrt[n]{\frac{x^n-y^n}{1+u^2n}}$
+
+    $\sum_{i=1}^n \int_a^b \int\limits_{a=0}^{b=1}$
+
+
+    $2\sum_{i=1}^n a_i \int^b_a f_i(x)g_i(x)\,\mathrm{d}x$
+
+    $a_0,a_1,\ldots,a_n$
+    $a_0 + a_1 + \cdots + a_n$
+
+    $\sum_{a=0}^n = a_0 + a_1 + \cdots + a_n$
+
+    The reduced cubic equation $y^3+3py+2q=0$ has one real and two complex solutions
+    when $D=q^2+p^3>0$. These are given by Cardan's formual as
+    \begin{equation}
+        y_1=u+v,\quad y_2=-\frac{u+v}{2} + i/2\sqrt{3}(u-v),\quad y_3=-\frac{u+v}{2} - i/2\sqrt{3}(u-v)
+    \end{equation}
+    where
+    \begin{equation}
+        u=\sqrt[3]{-q+\sqrt{q^2+p^3}},\qquad v=\sqrt[3]{-q-\sqrt{q^2+p^3}}
+    \end{equation}
+
+    Each of the measurements $x_1<x_2\cdots<x_r$ occurs $p_1,p_2\cdots,p_r$ times.
+    The mean value and standard deviation are then
+    \begin{equation}
+        x=\frac{1}{n}\sum_{i=1}^rp_ix_i,\qquad s=\sqrt{\frac{1}{n}\sum_{i=1}^rpi(x_i-x)^2}
+    \end{equation}
+    where $n=p_1+p_2+\cdots+p_r$
+
+    Although this equation looks very complicated, it should not present any great difficulties:
+    \begin{equation}
+        \int\frac{\sqrt{(ax+b)^3}}{x}\mathrm{d}x=\frac{2\sqrt{(ax+b)^3}}{3}+b^2\int\frac{\mathrm{d}x}{x\sqrt{ax+b}}
+    \end{equation}
+    The same applies to $\int_{-1}^8(\mathrm{d}x/\sqrt[3]{x})=\frac{3}{2}(8^{2/3}+1^{2/3})=15/2$.
+
+    \begin{math}
+        \begin{array}{clclclcl}
+            \alpha & \verb=\alpha= & \theta & \verb=\theta= &  o & \verb=o=  & \tau & \verb=\tau= \\
+            \beta & \verb=\beta= & \vartheta & \verb=\vartheta= & \pi & \verb=\pi= & \upsilon & \verb=\upsilon= \\
+            \gamma & \verb=\gamma= & \iota & \verb=\iota= & \varpi & \verb=\varpi= & \phi & \verb=\phi= \\
+            \delta & \verb=\delta= & \kappa & \verb=\kappa= & \rho & \verb=\rho= & \varphi & \verb=\varphi= \\
+            \epsilon & \verb=\epsilon= & \lambda & \verb=\lambda= & \varrho & \verb=\varrho= & \chi & \verb=\chi= \\ 
+            \varepsilon & \verb=\varepsilon= & \mu & \verb=\mu= & \sigma & \verb=\sigma= & \psi & \verb=\psi= \\ 
+            \zeta & \verb=\zeta= & \nu & \verb=\nu= & \varsigma & \verb=\varsigma= & \omega & \verb=\omega= \\
+            \eta & \verb=\eta= & \xi & \verb=\xi=
+        \end{array}
+    \end{math}
+    \captionof{table}{Lower case letters}
+
+    \begin{math}
+        \begin{array}{clclclcl}
+            \Gamma & \verb=\Gamma= & \Lambda & \verb=\Lambda= & \Sigma & \verb=\Sigma= & \Psi & \verb=\Psi= \\
+            \Delta & \verb=\Delta= & \Xi & \verb=\Xi= & \Upsilon & \verb=\Upsilon= & \Omega & \verb=\Omega= \\
+            \Theta & \verb=\Theta= & \Pi & \verb=\Pi= & \Phi & \verb=\Phi= \\
+        \end{array}
+    \end{math}
+
+    \begin{math}
+        \mathcal{A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z}
+    \end{math}
+
+    \begin{math}
+        \begin{array}{clclclcl}
+            \pm & \verb=\pm= & \cap & \verb=\cap= & \circ & \verb=\circ= & \bigcirc & \verb=\bigcirc= \\
+            \mp & \verb=\mp= & \cup & \verb=\cup= & \bullet & \verb=\bullet= & \Box & \verb=\Box= \\
+            \times & \verb=\times= & \uplus & \verb=\uplus= & \diamond & \verb=\diamond= & \Diamond & \verb=\Diamond= \\
+            \div & \verb=\div= & \sqcap & \verb=\sqcap= & \lhd & \verb=\lhd=  & \bigtriangleup & \verb=\bigtriangleup= \\
+            \cdot & \verb=\cdot= & \sqcup & \verb=\sqcup= & \rhd & \verb=\rhd=  & \bigtriangledown & \verb=\bigtriangledown= \\
+            \ast & \verb=\ast= & \vee & \verb=\vee= & \unlhd & \verb=\unlhd=  & \triangleleft & \verb=\triangleleft= \\
+            \star & \verb=\star= & \wedge & \verb=\wedge= & \unrhd & \verb=\unrhd=  & \triangleright & \verb=\triangleright= \\
+            \dagger & \verb=\dagger= & \oplus & \verb=\oplus= & \oslash & \verb=\oslash=  & \setminus & \verb=\setminus= \\
+            \ddagger & \verb=\ddagger= & \ominus & \verb=\ominus= & \odot & \verb=\odot=  & \wr & \verb=\wr= \\
+            \amalg & \verb=\amalg= & \otimes & \verb=\otimes= \\
+        \end{array}
+    \end{math}
+    \captionof{table}{Binary operators}
+
+    \begin{math}
+        \begin{array}{clclclcl}
+            \le & \verb=\le \leq= & \ge & \verb=\ge \geq= & \neq & \verb=\neq= & \sim & \verb=\sim= \\
+            \ll & \verb=\ll= & \gg & \verb=\gg= & \doteq & \verb=\doteq= & \simeq & \verb=\simeq= \\
+            \subset & \verb=\subset= & \supset & \verb=\supset= & \approx & \verb=\approx= & \asymp & \verb=\asymp= \\
+            \subseteq & \verb=\subseteq= & \supseteq & \verb=\supseteq= & \cong & \verb=\cong=  & \smile & \verb=\smile= \\
+            \sqsubset & \verb=\sqsubset= & \sqsupset & \verb=\sqsupset= & \equiv & \verb=\equiv=  & \frown & \verb=\frown= \\
+            \sqsubseteq & \verb=\sqsubseteq= & \sqsubseteq & \verb=\sqsubseteq= & \propto & \verb=\propto=  & \bowtie & \verb=\bowtie= \\
+            \in & \verb=\in= & \ni & \verb=\ni= & \prec & \verb=\prec=  & \succ & \verb=\succ= \\
+            \vdash & \verb=\vdash= & \dashv & \verb=\dashv= & \preceq & \verb=\preceq=  & \succeq & \verb=\succeq= \\
+            \models & \verb=\models= & \perp & \verb=\perp= & \parallel & \verb=\parallel=  & \mid & \verb=\mid= \\
+        \end{array}
+    \end{math}
+    \captionof{table}{Relations}
+
+
+    \begin{math}
+        \begin{array}{clclcl}
+            \not< & \verb=\not<= & \not> & \verb=\not>= & \not= & \verb|\not=| \\
+            \not\le & \verb=\not\le= & \not\ge & \verb=\not\ge= & \not\equiv & \verb=\not\equiv= \\
+            \not\prec & \verb=\not\prec= & \not\succ & \verb=\not\succ= & \not\sim & \verb=\not\sim= \\
+            \not\preceq & \verb=\not\preceq= & \not\succeq & \verb=\not\succeq= & \not\simeq & \verb=\not\simeq= \\
+            \not\subset & \verb=\not\subset= & \not\supset & \verb=\not\supset= & \not\approx & \verb=\not\approx= \\
+            \not\subseteq & \verb=\not\subseteq= & \not\supseteq & \verb=\not\supseteq= & \not\cong & \verb=\not\cong= \\
+            \not\in & \verb=\not\in= & \notin & \verb=\notin= \\
+        \end{array}
+    \end{math}
+    \captionof{table}{Relations negation}
+
+
+    \begin{math}
+        \begin{array}{clclcl}
+            \leftarrow & \verb=\leftarrow \gets= & \longleftarrow & \verb=\longleftarrow= & \uparrow & \verb|\upperarrow| \\
+            \Leftarrow & \verb=\Leftarrow= & \Longleftarrow & \verb=\Longleftarrow= & \Uparrow & \verb|\Upperarrow| \\
+            \rightarrow & \verb=\rightarrow \to= & \longrightarrow & \verb=\longrightarrow= & \downarrow & \verb|\downarrow| \\
+            \Rightarrow & \verb=\Rightarrow= & \Longrightarrow & \verb=\Longrightarrow= & \Downarrow & \verb|\Downarrow| \\
+            \leftrightarrow & \verb=\leftrightarrow= & \longleftrightarrow & \verb=\longleftrightarrow= & \updownarrow & \verb|\updownarrow| \\
+            \Leftrightarrow & \verb=\Leftrightarrow= & \Longleftrightarrow & \verb=\Longleftrightarrow= & \Updownarrow & \verb|\Updownarrow| \\
+            \mapsto & \verb=\mapsto= & \longmapsto & \verb=\longmapsto= & \nearrow & \verb|\nearrow| \\
+            \hookleftarrow & \verb=\hookleftarrow= & \hookrightarrow & \verb=\hookrightarrow= & \searrow & \verb|\searrow| \\
+            \leftharpoonup & \verb=\leftharpoonup= & \rightharpoonup & \verb=\rightharpoonup= & \swarrow & \verb|\swarrow| \\
+            \leftharpoondown& \verb=\leftharpoondown= & \rightharpoondown & \verb=\rightharpoondown= & \nwarrow & \verb|\nwarrow| \\
+            \rightleftharpoons& \verb=\rightleftharpoons= & \leadsto & \verb=\leadsto= \\
+        \end{array}
+    \end{math}
+    \captionof{table}{Arrows and pointers}
+
+    \begin{math}
+        \begin{array}{clclclcl}
+            \aleph & \verb=\aleph= & \prime & \verb=\prime= & \forall & \verb=\forall= & \Box & \verb=\Box= \\
+            \hbar & \verb=\hbar= & \emptyset & \verb=\emptyset= & \exists & \verb=\exists= & \Diamond & \verb=\Diamond= \\
+            \imath & \verb=\imath= & \nabla & \verb=\nabla= & \neg & \verb=\neg= & \triangle & \verb=\triangle= \\
+            \jmath & \verb=\jmath= & \surd & \verb=\surd= & \flat & \verb=\flat= & \clubsuit & \verb=\clubsuit= \\
+            \ell & \verb=\ell= & \partial & \verb=\partial= & \natural & \verb=\natural= & \diamondsuit & \verb=\diamondsuit= \\
+            \wp & \verb=\wp= & \top & \verb=\top= & \sharp & \verb=\sharp= & \heartsuit & \verb=\heartsuit= \\
+            \Re & \verb=\Re= & \bot & \verb=\bot= & \| & \verb=\|= & \spadesuit & \verb=\spadesuit= \\
+            \Im & \verb=\Im= & \vdash & \verb=\vdash= & \angle & \verb=\angle= & \Join & \verb=\Join= \\
+            \mho & \verb=\mho= & \dashv & \verb=\dashv= & \backslash & \verb=\backslash= & \infty & \verb=\infty= \\
+        \end{array}
+    \end{math}
+    \captionof{table}{Various other symbols}
+
+    \begin{math}
+        \begin{array}{clclcl}
+            \sum & \verb=\sum= & \bigcap & \verb=\bigcap= & \bigodot & \verb=\bigodot= \\
+            \int & \verb=\int= & \bigcup & \verb=\bigcup= & \bigotimes & \verb=\bigotimes= \\
+            \oint & \verb=\oint= & \bigsqcup & \verb=\bigsqcup= & \bigoplus & \verb=\bigoplus= \\
+            \prod & \verb=\prod= & \bigvee & \verb=\bigvee= & \biguplus & \verb=\biguplus= \\
+            \coprod & \verb=\coprod= & \bigwedge & \verb=\bigwedge= \\
+        \end{array}
+    \end{math}
+    \captionof{table}{Symbos with two size}
+
+    \begin{math}
+        \begin{array}{cl@{\qquad\quad}cl@{\qquad}cl@{\qquad}cl}
+            ( & \verb=(= & ) & \verb=)= & \lfloor & \verb=\lfloor= & \rfloor & \verb=\rfloor= \\
+               & \verb=[= & ]  & \verb=]= & \lceil & \verb=\lceil= & \rceil & \verb=\rceil= \\
+            \{ & \verb=\{= & \} & \verb=\}= & \langle & \verb=\langle= & \rangle & \verb=\rangle= \\
+            | & \verb=|= & \| & \verb=\|= & \uparrow & \verb=\uparrow= & \Uparrow & \verb=\Uparrow= \\
+            / & \verb=/= & \backslash & \verb=\backslash= & \downarrow & \verb=\downarrow= & \Downarrow & \verb=\Downarrow= \\
+              &          &   &                    & \updownarrow & \verb=\updownarrow= & \Updownarrow & \verb=\Updownarrow= \\
+        \end{array}
+    \end{math}
+    \captionof{table}{The 22 auto-sizing symbols}
+
+
+    \begin{math}
+        \begin{array}{ccl}
+            \oint^\infty_0 & \oint\limits^\infty_0 & \verb=\oint^\infty_0 \oint\limits^\infty_0= \\
+            \prod^n_{\nu=0} & \prod\nolimits^n_{\nu=0} & \verb|\prod^n_{\nu=0} \prod\nolimits^n_{\nu=0}| \\
+        \end{array}
+    \end{math}
+
+    % \begin{math}
+    %     \lim_{x\to\infty}\frac{\ln\sin\pi x}{\ln\sin x}=\lim_{x\to\infty}\frac{\pi\frac{\cos\pi x}{\sin\pi x}}{\frac{\cos x}{}\sin x}
+    % \end{math}
+
+    \begin{equation}
+        x=\frac{1}{n}\sum_{i=1}^rp_ix_i,\qquad s=\sqrt{\frac{1}{n}\sum_{i=1}^rpi(x_i-x)^2}
+    \end{equation}
+
+    \begin{displaymath}
+        x=\frac{1}{n}\sum_{i=1}^rp_ix_i,\qquad s=\sqrt{\frac{1}{n}\sum_{i=1}^rpi(x_i-x)^2}
+    \end{displaymath}
+
+    \[ x=\frac{1}{n}\sum_{i=1}^rp_ix_i,\qquad s=\sqrt{\frac{1}{n}\sum_{i=1}^rpi(x_i-x)^2}\]
+
+    \begin{displaymath}
+        \vec{x} + \vec{y} + \vec{z}=\left(\begin{array}{c}a \\ b \end{array} \right]
+    \end{displaymath}
+
+    \[ \vec{x} + \vec{y} + \vec{z}=\left(\begin{array}{c}a \\ b \end{array} \right] \]
+
+
+    \begin{displaymath}
+        y=\left\{
+            \begin{array}{r@{\quad:\quad}l}
+                -1 & x<0 \\
+                0  & x=0 \\
+                +1 & x>0
+            \end{array}
+        \right.
+    \end{displaymath}
+
+    \begin{displaymath}
+        f(n)=\left\{
+            \begin{array}{l@{\quad:\quad}l}
+                1  & n=0 \\
+                1  & n=1 \\
+                f(n-1) + f(n-2) & n>1
+            \end{array}
+        \right.
+    \end{displaymath}
+
+    斐波那契数列由公式\ref{eq:fibonacci}给出。请编写一个高效的斐波那契数列程序，计算第n个斐波那契数列的值。
+    \begin{equation}
+        \label{eq:fibonacci}
+        f(n)=\left\{
+            \begin{array}{l@{\quad:\quad}l}
+                1  & n=0 \\
+                1  & n=1 \\
+                f(n-1) + f(n-2) & n>1
+            \end{array}
+        \right.
+    \end{equation}
+
+    The gamma function $\Gamma(x)$ is defined as
+    \begin{displaymath}
+        \Gamma(x) \equiv \lim_{n\to\infty} \prod_{v=0}^{n-1} \frac{n!n^{x-1}}{x+v}=\lim_{n\to\infty} \frac{n!n^{x-1}}{x(x+1)(x+2)\cdots(x+n-1)} \equiv \int_0^\infty e^{-t}t^{x-1}\mathrm{d}t
+    \end{displaymath}
+    The integral definition is valid only for $x>0$ （2nd Euler integral).
+
+    \begin{displaymath}
+        \alpha\vec{x} = \vec{x}\alpha,\quad \alpha\beta\vec{x} = \beta\alpha\vec{x},\quad (\alpha + \beta)\vec{x} = \alpha\vec{x} + \beta\vec{x}, \quad \alpha(\vec{x} + \vec{y})=\alpha\vec{x} + \alpha\vec{y}.\\
+    \end{displaymath}
+    \begin{displaymath}
+        \vec{x}\vec{y}=\vec{y}\vec{x}\quad but \quad \vec{x} \times \vec{y} = -\vec{y} \times \vec{x}, \vec{x}\vec{y}=0\quad for \quad\vec{x}\perp\vec{y}, \vec{x} \times \vec{y} = 0,\quad for\quad \vec{x} \parallel \vec{y}.
+    \end{displaymath}
+    \begin{displaymath}
+        \vec{x}\vec{y}=\vec{y}\vec{x}\quad \mbox{but} \quad \vec{x} \times \vec{y} = -\vec{y} \times \vec{x}, \vec{x}\vec{y}=0\quad \mbox{for}\quad\vec{x}\perp\vec{y}, \vec{x} \times \vec{y} = 0,\quad \mbox{for}\quad \vec{x} \parallel \vec{y}.
+    \end{displaymath}
+
+    \begin{equation}
+        \frac{\partial^2U}{\partial x^2} + \frac{\partial^2U}{\partial y^2}=0 \Longrightarrow U_M = \frac{1}{4\pi} \oint_\Sigma \frac{1}{r} \frac{\partial U}{\partial n}\mathrm{d}s - \frac{1}{4\pi}\oint_\Sigma \frac{\partial \frac{1}{r}}{\partial n}U\mathrm{d}s
+    \end{equation}
+
+    \begin{equation}
+        I(z)=\sin(\frac{\pi}{2} z^2)\sum_{n=0}^\infty \frac{(-1)^n \pi^{2n}}{1 \cdot 3 \cdots(4n +1)} z^{4n+1} - cos(\frac{\pi}{2} z^2) \sum_{n=0}^\infty \frac{(-1)^n \pi^{2n+1}}{1\cdot3\cdots(4n+3)} z^{4n+3}
+    \end{equation}
+
+
+    \begin{equation}
+        I(z)=\sin\left(\frac{\pi}{2} z^2\right)\sum_{n=0}^\infty \frac{(-1)^n \pi^{2n}}{1 \cdot 3 \cdots(4n +1)} z^{4n+1} - \cos\left(\frac{\pi}{2} z^2\right) \sum_{n=0}^\infty \frac{(-1)^n \pi^{2n+1}}{1\cdot3\cdots(4n+3)} z^{4n+3}
+    \end{equation}
+
+    \begin{math}
+        \begin{array}{c@{\:+\:}c@{\:+\cdots+\:}c@{\;=\;}c}
+            a_{11}x_1 & a_{12}x_2 & a_{1n}x_n & b_1 \\
+            a_{21}x_1 & a_{22}x_2 & a_{2n}x_n & b_2 \\
+            \multicolumn{4}{c}{\dotfill} \\
+            a_{n1}x_1 & a_{n2}x_2 & a_{nn}x_n & b_n \\
+        \end{array}
+    \end{math}
+
+    \begin{math}
+        \left (
+        \begin{array}{c@{\:+\:}c@{\:+\cdots+\:}c@{\;=\;}c}
+            a_{11}x_1 & a_{12}x_2 & a_{1n}x_n & b_1 \\
+            a_{21}x_1 & a_{22}x_2 & a_{2n}x_n & b_2 \\
+            \multicolumn{4}{c}{\dotfill} \\
+            a_{n1}x_1 & a_{n2}x_2 & a_{nn}x_n & b_n \\
+        \end{array}
+        \right )
+    \end{math}
+
+    \begin{math}
+        \left (
+        \begin{array}{c}
+            \left |
+                \begin{array}{c@{\qquad}c}
+                    x_11 & x_12 \\
+                    x_21 & x_22 \\
+                \end{array}
+            \right | \\
+            y \\
+            z \\
+        \end{array}
+        \right )
+    \end{math}
+
+    % using table vertical bar to typeset the two vertial bars
+    The solution for the system of equations
+    \begin{equation}
+        F(x,y)=0\quad \mbox{and}\quad
+        \begin{array}{|*{2}{c@{\quad}}c|}
+            F_{xx}'' & F_{xy}'' & F_{x}' \\
+            F_{yx}'' & F_{yy}'' & F_{y}' \\
+            F_{x}'   & F_{y}'   & 0 \\
+        \end{array} = 0
+    \end{equation}
+    yields the coordinates for the possible inflection points of $F(x,y)=0$.
+
+    % using \left \right to typeset the two vertial bars
+    The solution for the system of equations
+    \begin{equation}
+        F(x,y)=0\quad \mbox{and}\quad
+        \left |
+        \begin{array}{*{2}{c@{\quad}}c}
+            F_{xx}'' & F_{xy}'' & F_{x}' \\
+            F_{yx}'' & F_{yy}'' & F_{y}' \\
+            F_{x}'   & F_{y}'   & 0 \\
+        \end{array}
+        \right | = 0
+    \end{equation}
+    yields the coordinates for the possible inflection points of $F(x,y)=0$.
+
+    % using \left \right to typeset the two vertial bars
+    The shortest distance between two straight lines represented by the equations
+    \begin{equation}
+        \frac{x-x_1}{l_1} = \frac{y-y_1}{m_1} = \frac{z-z_1}{n_1}
+        \quad \mbox{and} \quad 
+        \frac{x-x_2}{l_2} = \frac{y-y_2}{m_2} = \frac{z-z_2}{n_2}
+    \end{equation}
+    is given by the expression
+    \[
+        \frac{
+            \pm{\left |
+            \begin{array}{*{2}{c@{\quad}}c}
+                x_1-x_2 & y_1-y_2 & z_1-z_2 \\
+                l_1     & m_1     & n_1 \\
+                l_2     & m_2     & n_2 \\
+            \end{array}
+            \right |}
+        }{
+            \sqrt{
+                {\left | \begin{array}{c@{\quad}c} l_1 & m_1 \\ l_2 & m_2 \\\end{array}\right |}^2
+                    +
+                {\left | \begin{array}{c@{\quad}c} m_1 & n_1 \\ m_2 & n_2 \\\end{array}\right |}^2
+                    +
+                {\left | \begin{array}{c@{\quad}c} n_1 & l_1 \\ n_2 & l_2 \\\end{array}\right |}^2
+            }
+        }
+    \]
+    If the numerator is zero, the two lines meet somewhere.
+
+    Laurent expansion: using $c_n=\frac{1}{2\pi i \oint(\zeta-a)^{-n-1} f(\zeta) \mathrm{d}\zeta}$, for every
+    function $f(z)$ the following representation is valid $(n=0,\pm 1,\pm 2,\ldots)$
+    \[
+        f(x)=\sum_{n=-\infty}^{+\infty} c_n(z-a)^n={\left \{ \begin{array}{r} c_0+c_1(z-a)+c_2(z-a)^2+\cdots+c_n(z-a)^n+\cdots \\ +c_{-1}(z-a)^{-1}+c_{-2}(z-a)^{-2}+\cdots \\ +c_{-n}(z-a)^{-n}+\cdots \\ \end{array} \right.}
+    \] 
+
+    The total numbetr of permutations of n elements taken m at a time (symbol $P_n^m$) is
+    \[
+        P_n^m = \prod_{i=0}^{m-1}(n-i)=\underbrace{n(n-1)(n-2)\ldots(n-m+1)}_{\mbox{total of m factors}}=\frac{n!}{(n-m)!}
+    \]
+
+    \[
+        \prod_{j\ge0}\left( \sum_{k\ge0} a_{jk}zˆk \right) = \sum_{n\ge0} zˆn \left(\sum_{k_0,k_1\ldots\ge0 \atop k_0+k_1+\cdots=0} a_{0k_0} a_{1k_1}\ldots \right)
+    \]
+
+    \begin{eqnarray}
+        \arcsin{x} & = & -\arcsin(-x)=\frac{\pi}{2} - \arccos x=\left [\arccos\sqrt{1-x^2}\right] \nonumber \\
+                   & = & \arctan\frac{x}{\sqrt{1-x^2}} = \left [\arccos \frac{\sqrt{1-x^2}}{x}\right]
+    \end{eqnarray}
+
+\end{document}
