@@ -1,0 +1,32 @@
+\documentclass{article}
+%\documentclass{minimal}
+
+%\usepackage[12tabu,orthodox]{nag}
+\usepackage{trace}
+\usepackage{xcolor}
+\usepackage{lipsum}
+
+\listfiles
+\newcommand{\todobox}[1]{
+  \fcolorbox{red}{yellow}{#1}
+}
+
+\begin{document}
+
+%\show\todobox
+
+%\traceon
+{
+  \todobox{tune linespread}
+  \linespread{1}
+  \usefont{T1}{bch}{m}{n}
+  \lipsum[1-2]
+}
+%\traceoff
+
+{
+  \todobox{normal linespread}
+  \lipsum[1-2]
+}
+
+\end{document}

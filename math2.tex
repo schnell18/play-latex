@@ -7,6 +7,10 @@
 \usepackage{verbatim}
 \usepackage{caption}
 \usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bbm}
+\usepackage{upgreek}
 
 \begin{document}
     The derivative of the indirect function $f[g(x)]$ is $\{f[g(x)]\}' = f'[g(x)]g'(x)$.
@@ -66,13 +70,27 @@
             \beta & \verb=\beta= & \vartheta & \verb=\vartheta= & \pi & \verb=\pi= & \upsilon & \verb=\upsilon= \\
             \gamma & \verb=\gamma= & \iota & \verb=\iota= & \varpi & \verb=\varpi= & \phi & \verb=\phi= \\
             \delta & \verb=\delta= & \kappa & \verb=\kappa= & \rho & \verb=\rho= & \varphi & \verb=\varphi= \\
-            \epsilon & \verb=\epsilon= & \lambda & \verb=\lambda= & \varrho & \verb=\varrho= & \chi & \verb=\chi= \\ 
-            \varepsilon & \verb=\varepsilon= & \mu & \verb=\mu= & \sigma & \verb=\sigma= & \psi & \verb=\psi= \\ 
+            \epsilon & \verb=\epsilon= & \lambda & \verb=\lambda= & \varrho & \verb=\varrho= & \chi & \verb=\chi= \\
+            \varepsilon & \verb=\varepsilon= & \mu & \verb=\mu= & \sigma & \verb=\sigma= & \psi & \verb=\psi= \\
             \zeta & \verb=\zeta= & \nu & \verb=\nu= & \varsigma & \verb=\varsigma= & \omega & \verb=\omega= \\
             \eta & \verb=\eta= & \xi & \verb=\xi=
         \end{array}
     \end{math}
     \captionof{table}{Lower case letters}
+
+    \begin{math}
+        \begin{array}{clclclcl}
+            \upalpha & \verb=\upalpha= & \uptheta & \verb=\uptheta= &  o & \verb=o=  & \uptau & \verb=\uptau= \\
+            \upbeta & \verb=\upbeta= & \upvartheta & \verb=\upvartheta= & \uppi & \verb=\uppi= & \upupsilon & \verb=\upupsilon= \\
+            \upgamma & \verb=\upgamma= & \upiota & \verb=\upiota= & \upvarpi & \verb=\upvarpi= & \upphi & \verb=\upphi= \\
+            \updelta & \verb=\updelta= & \upkappa & \verb=\upkappa= & \uprho & \verb=\uprho= & \upvarphi & \verb=\upvarphi= \\
+            \upepsilon & \verb=\upepsilon= & \uplambda & \verb=\uplambda= & \upvarrho & \verb=\upvarrho= & \upchi & \verb=\upchi= \\
+            \upvarepsilon & \verb=\upvarepsilon= & \upmu & \verb=\upmu= & \upsigma & \verb=\upsigma= & \uppsi & \verb=\uppsi= \\
+            \upzeta & \verb=\upzeta= & \upnu & \verb=\upnu= & \upvarsigma & \verb=\upvarsigma= & \upomega & \verb=\upomega= \\
+            \upeta & \verb=\upeta= & \upxi & \verb=\upxi=
+        \end{array}
+    \end{math}
+    \captionof{table}{Lower case upright letters}
 
     \begin{math}
         \begin{array}{clclclcl}
@@ -187,6 +205,16 @@
     \end{math}
     \captionof{table}{The 22 auto-sizing symbols}
 
+    \begin{math}
+        \begin{array}{l@{\quad}l}
+            none & () \lfloor \rfloor ] \lceil \rceil \{ \} \langle \rangle | \| \uparrow \Uparrow / \backslash \downarrow \Downarrow \updownarrow \Updownarrow \\
+            \verb=\big= & {\big( \big) \big\lfloor \big\rfloor \big] \big\lceil \big\rceil \big\{ \big\} \big\langle \big\rangle \big| \big\| \big\uparrow \big\Uparrow \big/ \big\backslash \big\downarrow \big\Downarrow \big\updownarrow \big\Updownarrow} \\
+            \verb=\Big= & {\Big( \Big) \Big\lfloor \Big\rfloor \Big] \Big\lceil \Big\rceil \Big\{ \Big\} \Big\langle \Big\rangle \Big| \Big\| \Big\uparrow \Big\Uparrow \Big/ \Big\backslash \Big\downarrow \Big\Downarrow \Big\updownarrow \Big\Updownarrow} \\
+            \verb=\bigg= & {\bigg( \bigg) \bigg\lfloor \bigg\rfloor \bigg] \bigg\lceil \bigg\rceil \bigg\{ \bigg\} \bigg\langle \bigg\rangle \bigg| \bigg\| \bigg\uparrow \bigg\Uparrow \bigg/ \bigg\backslash \bigg\downarrow \bigg\Downarrow \bigg\updownarrow \bigg\Updownarrow} \\
+            \verb=\Bigg= & {\Bigg( \Bigg) \Bigg\lfloor \Bigg\rfloor \Bigg] \Bigg\lceil \Bigg\rceil \Bigg\{ \Bigg\} \Bigg\langle \Bigg\rangle \Bigg| \Bigg\| \Bigg\uparrow \Bigg\Uparrow \Bigg/ \Bigg\backslash \Bigg\downarrow \Bigg\Downarrow \Bigg\updownarrow \Bigg\Updownarrow} \\
+        \end{array}
+    \end{math}
+    \captionof{table}{The five sizes for auto-sizing symbols}
 
     \begin{math}
         \begin{array}{ccl}
@@ -386,5 +414,75 @@
         \arcsin{x} & = & -\arcsin(-x)=\frac{\pi}{2} - \arccos x=\left [\arccos\sqrt{1-x^2}\right] \nonumber \\
                    & = & \arctan\frac{x}{\sqrt{1-x^2}} = \left [\arccos \frac{\sqrt{1-x^2}}{x}\right]
     \end{eqnarray}
+
+    \[
+        a+\rlap{$\overbrace{\phantom{b+c+d}}^m$} b+ \underbrace{c+d+e}_n +f
+    \]
+
+ 
+   phantom goes here \rlap{$\overbrace{\phantom{{b+c+d}}}^m$} ====\\
+   \verb=\phantom= effect demo \phantom{||}====\\
+   \verb=\rlap= effect demo \rlap{||}====
+
+   $\text{被减数} - \text{减数} = \text{差}$
+ 
+   开方次数位置调整对比\\
+   \[
+       \sqrt[n]{\frac{x^2+\sqrt{2}}{x+xy}}
+   \]
+   \[
+       \sqrt[\uproot{12}\leftroot{-2}n]{\frac{x^2+\sqrt{2}}{x+xy}}
+   \]
+
+   根式位置调整对比\\
+   $\sqrt{\frac 12} < \sqrt{2}$ \qquad
+   $\sqrt{\frac 12} < \sqrt{\vphantom{\frac 12}2}$
+
+   根式垂直对齐\\
+   $\sqrt b \sqrt y$ \qquad $\sqrt{\mathstrut b} \sqrt{\mathstrut y}$
+
+   矩阵：
+   \[
+       \begin{matrix}
+        a & b \\
+        c & d \\
+       \end{matrix}
+       \begin{bmatrix}
+        a & b \\
+        c & d \\
+       \end{bmatrix}
+       \begin{vmatrix}
+        a & b \\
+        c & d \\
+       \end{vmatrix}
+       \begin{pmatrix}
+        a & b \\
+        c & d \\
+       \end{pmatrix}
+       \begin{Bmatrix}
+        a & b \\
+        c & d \\
+       \end{Bmatrix}
+       \begin{Vmatrix}
+        a & b \\
+        c & d \\
+       \end{Vmatrix}
+   \]
+
+
+  % 矩阵：
+  % \begin{table}{*{5}{c@{\quad}}c}
+  %    matrix环境 & \begin{matrix} a & b \\ c & d \end{matrix} &
+  %    bmatrix环境 & \begin{bmatrix} a & b \\ c & d \end{bmatrix} &
+  %    vmatrix环境 & \begin{vmatrix} a & b \\ c & d \end{vmatrix} \\
+  %    pmatrix环境 & \begin{pmatrix} a & b \\ c & d \end{pmatrix} &
+  %    Bmatrix环境 & \begin{Bmatrix} a & b \\ c & d \end{Bmatrix} &
+  %    Vmatrix环境 & \begin{Vmatrix} a & b \\ c & d \end{Vmatrix}
+  % \end{table}
+
+  $\mathbbm{ABCXYZabcxyz}$
+  $\mathfrak{ABCXYZabcxyz}$
+
+
 
 \end{document}

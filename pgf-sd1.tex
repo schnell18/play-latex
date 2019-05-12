@@ -1,0 +1,28 @@
+\documentclass{ctexart}
+\usepackage{pgf-umlsd}
+\usepackage{pdflscape}
+
+\begin{document}
+  \noindent
+  \centering
+  \begin{landscape}
+    \begin{sequencediagram}
+      \newthread{pc}{插件入口}
+      \newinst{ps}{接入方服务端}
+      \newinst[2]{pdopenapi}{好医生OpenAPI网关}
+      \newinst{pduser}{好医生会员中心}
+      \newinst{pdulogin}{好医生联合登陆页}
+      \newinst{pdplugin}{好医生插件落地页}
+      \begin{call}{pc}{申请令牌}{ps}{返回令牌}
+        \begin{call}{ps}{调用OpenAPI申请令牌}{pdopenapi}{返回令牌}
+          \begin{call}{pdopenapi}{获取令牌}{pduser}{返回令牌}
+          \end{call}
+        \end{call}
+      \end{call}
+      \begin{call}{pc}{带令牌跳转联合登陆页}{pdulogin}{返回插件落地页重定向地址}
+      \end{call}
+      \begin{call}{pc}{跳转到插件落地页}{pdplugin}{}
+      \end{call}
+    \end{sequencediagram}
+  \end{landscape}
+\end{document}

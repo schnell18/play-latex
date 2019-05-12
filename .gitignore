@@ -7,3 +7,5 @@
 *.fls
 *.synctex.gz
 *.toc
+*~
+*.synctex(busy)

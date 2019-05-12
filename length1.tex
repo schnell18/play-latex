@@ -1,0 +1,32 @@
+\documentclass[a4paper]{article}
+%\documentclass{article}
+% if you don't load a package like geometry or hyperref (who doesn't use hyperref?), then you could add these two lines
+\pdfpagewidth=\paperwidth
+\pdfpageheight=\paperheight
+
+
+\makeatletter
+\newcommand\usemm[1]{%
+  \strip@pt\dimexpr0.3514598\dimexpr #1\relax\relax mm%
+}
+\newcommand\usein[1]{%
+  \strip@pt\dimexpr0.013837\dimexpr #1\relax\relax in%
+}
+\makeatother
+
+\begin{document}
+\the\paperheight \par
+\the\paperwidth  \par
+\the\hsize       \par % or \textwidth
+\the\vsize       \par % or \textheight
+
+\usemm{\the\paperheight} \par
+\usemm{\the\paperwidth}  \par
+\usemm{\the\hsize}       \par
+\usemm{\the\vsize}       \par
+
+\usein{\the\paperheight} \par
+\usein{\the\paperwidth}  \par
+\usein{\the\hsize}       \par
+\usein{\the\vsize}       \par
+\end{document}

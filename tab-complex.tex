@@ -1,0 +1,36 @@
+      \documentclass{article}
+      \usepackage{ctex,makecell,multirow,diagbox}
+      \begin{document}
+        \begin{table}[h]
+          \begin{tabular}{|*{8}{c|}}
+            \hline
+            \multirow{2}*{\makecell{摩擦副\\配对材料}} &
+            \multicolumn{2}{c|}{%
+              \multirow{2}*{%
+                \diagbox[width=10em,height=2\normalbaselineskip]%
+                {锁紧结构}{锁紧力矩\\[-1ex]\small$\mathrm{N \cdot m}$}%
+              }
+            }
+            & \multicolumn{5}{c|}{供油压力(MPa)} \\
+            \cline{4-8}
+            & \multicolumn{2}{c|}{} & 2 & 5 & 7 & 10 & 12 \\
+            \hline
+            \multirow{5}*{调制钢} & \multirow{5}*{\makecell{摩\\擦\\锥}}
+            & $\theta = 60\textdegree{}\mbox{，单槽}$ & 1.3 & 2.6 & 2.9 & 3.5 & 3.8 \\
+            \cline{3-8}
+            & & $\theta = 60\textdegree{}\mbox{，双槽}$ & 1.8 & 3.4 & 3.7 & 4.5 & 5.2 \\
+            \cline{3-8}
+            & & $\theta = 64\textdegree{}\mbox{，双槽}$ & 1.2 & 2.6 & 2.9 & 3.4 & 3.7 \\
+            \cline{3-8}
+            & & $\theta = 36\textdegree{}\mbox{，双槽}$ & 1.5 & 3.3 & 4.3 & 4.4 & 4.6 \\
+            \cline{3-8}
+            & & $\theta = 20\textdegree{}\mbox{，双槽}$ & 1.6 & 3.3 & 3.8 & 5.0 & 5.5 \\
+            \hline
+            \multirow{2}*{H62}
+            & \multicolumn{2}{c|}{内摩擦环} & 1.6 & 2.9 & 4.0 & 4.6 & 5.1 \\
+            \cline{2-8}
+            & \multicolumn{2}{c|}{外摩擦环} & 7.6 & 8.6 & 9.5 & 10.5 & 11.7 \\
+            \hline
+          \end{tabular}
+        \end{table}
+      \end{document}
