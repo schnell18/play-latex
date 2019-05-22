@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage{forest}
+\usetikzlibrary{arrows.meta,shapes,positioning,shadows,trees}
+%
+\tikzset{
+    basic/.style  = {draw, text width=2cm, drop shadow, font=\sffamily, rectangle},
+    root/.style   = {basic, rounded corners=2pt, thin, align=center,
+                     fill=green!30},
+    onode/.style = {basic, thin, rounded corners=2pt, align=center, fill=green!60,text width=3cm,},
+    tnode/.style = {basic, thin, align=left, fill=pink!60, text width=6.5em},
+    edge from parent/.style={draw=black, edge from parent fork right}
+}
+%
+\begin{document}
+\begin{forest} for tree={
+    grow=east,
+    growth parent anchor=east,
+    parent anchor=east,
+    child anchor=west,
+    edge path={\noexpand\path[\forestoption{edge},->, >={latex}] 
+         (!u.parent anchor) -- +(5pt,0pt) |- (.child anchor)
+         \forestoption{edge label};}
+}
+[Drawing diagrams, root
+    [Defining node and arrow styles, onode
+        [Setting shape, tnode]
+        [Choosing color, tnode]
+        [Adding shading, tnode] ]
+    [Positioning the nodes, onode
+        [Using a Matrix, tnode]
+        [Relatively, tnode]
+        [Absolutely, tnode] 
+        [Using overlays, tnode] ]
+    [Drawing arrows between nodes, onode
+        [Default arrows, tnode]
+        [Arrow library, tnode]
+        [Resizing tips, tnode] 
+        [Shortening, tnode]
+        [Bending, tnode] ] ]
+\end{forest}
+\end{document}
