@@ -1,6 +1,7 @@
 *.aux
 *.log
 *.pdf
+*.dvi
 *.swp
 *.swo
 *.fdb_latexmk

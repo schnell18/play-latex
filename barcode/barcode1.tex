@@ -1,0 +1,22 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass{article}
+\usepackage{pst-barcode}
+
+\begin{document}
+\begin{pspicture}(3.5,1.2in)
+    \psbarcode{01335583}{includetext guardwhitespace}{ean8}
+\end{pspicture}
+\begin{pspicture}(3.5,1.2in)
+\psbarcode{01335583}{includetextguardwhitespace}{ean8}
+\end{pspicture}
+\begin{pspicture}(3.5,1.2in)
+    \psbarcode{01335583}{textsize=15includetextguardwhitespacewidth=2}{ean8}
+\end{pspicture}
+
+
+foo\fbox{%
+\parbox[b][1in]{1.5in}{\psbarcode{241078}{includetextwidth=1.5height=1}{code39}}}
+bar
+\end{document}

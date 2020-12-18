@@ -1,0 +1,24 @@
+\documentclass{article}
+\usepackage{tabstackengine,xcolor,rotating}
+\newcommand\blackcard[2]{%
+  \begingroup\fboxsep=0pt\relax
+  \fbox{\tabbedCenterstack{%
+  \scriptsize$#2$ && \\&\makebox[10pt]{#1}&\\&
+  &\rotatebox[origin=c]{180}{\scriptsize$#2$}}}%
+  \endgroup}
+\newcommand\redcard[2]{%
+  \begingroup\fboxsep=0pt\relax
+  \fbox{\color{red}\tabbedCenterstack{%
+  \scriptsize$#2$ && \\&\makebox[10pt]{#1}&\\&&\rotatebox[origin=c]{180}{\scriptsize$#2$}}}%
+  \endgroup}
+\begin{document}
+\blackcard{Q}{\spadesuit}
+\redcard{10}{\heartsuit}
+\blackcard{8}{\clubsuit}
+\redcard{A}{\diamondsuit}
+$\spadesuit$
+$\heartsuit$
+$\clubsuit$
+$\diamondsuit$
+\end{document}
+
