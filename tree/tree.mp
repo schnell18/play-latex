@@ -1,8 +1,8 @@
 beginfig(1)
-u:=1cm; branchrotation := 60;
+u:=2cm; branchrotation := 60;
 offset := 180-branchrotation;
-thinning := 0.7;
-shortening := 0.8;
+thinning := 0.65;
+shortening := 0.75;
 def drawit(expr p, linethickness) =
   draw p withpen pencircle scaled linethickness;
 enddef;
@@ -25,7 +25,7 @@ vardef tree(expr A,B,n,size) =
     drawit(B--D, thickness);
   fi;
 enddef;
-tree((0,0), (0,u), 10, 2mm);
+tree((0,0), (0,u), 13, 3mm);
 endfig;
 end;
 
