@@ -1,3 +1,4 @@
 # Introduction
 
-This is a repository of Latex studying exercises.
+This is a repository of LaTex studying exercises.
+
