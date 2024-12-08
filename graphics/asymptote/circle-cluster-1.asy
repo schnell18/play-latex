@@ -1,5 +1,5 @@
 if(!settings.multipleView) settings.batchView=false;
-settings.tex="pdflatex";
+settings.tex="xelatex";
 defaultfilename="circle-cluster-1";
 if(settings.render < 0) settings.render=4;
 settings.outformat="";
