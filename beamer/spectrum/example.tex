@@ -1,0 +1,42 @@
+% \documentclass[aspectratio=169]{beamer}
+\documentclass{beamer}
+
+\usetheme[
+%  themecolor=teal,
+%  titlegraphic=blueshade,% from tcolorbox pkg
+%  sectiongraphic=blueshade,% from tcolorbox pkg
+%  titlecredit={Title graphic: tcolorbox package},
+]{spectrum}
+
+\AtBeginSection[]{
+  \begin{frame}
+    \usebeamertemplate{section page}
+  \end{frame}
+}
+
+\title{Some Very Interesting Title}
+\author{Author Name}
+\institute{Cool Conference}
+
+\setbeamertemplate{logo}{
+  \begin{tikzpicture}[remember picture, overlay]
+    \draw ([xshift=0.1pt]current page.south west) rectangle (current page.north east);
+  \end{tikzpicture}
+}
+
+\begin{document}
+
+\maketitle
+
+\section{Section Title}
+
+\begin{frame}
+  \frametitle{Frame Title}
+  Normal frame
+\end{frame}
+
+\begin{frame}[standout]
+  Standout frame
+\end{frame}
+
+\end{document}

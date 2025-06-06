@@ -10,3 +10,6 @@
 *.toc
 *~
 *.synctex(busy)
+*.out
+*.nav
+*.snm
