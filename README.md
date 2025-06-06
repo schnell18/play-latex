@@ -1,4 +1,4 @@
 # Introduction
 
-This is a repository of LaTex studying exercises.
+This is a repository of LaTeX documents for study purpose.
 
