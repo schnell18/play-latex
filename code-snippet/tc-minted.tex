@@ -1,0 +1,175 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{tcolorbox}
+\usepackage{minted}
+\tcbuselibrary{minted,skins}
+
+% Define custom styles for different code themes
+\newtcblisting{gocode}[1][]{
+    listing engine=minted,
+    listing only,
+    minted language=go,
+    minted options={
+        linenos=true,
+        numbersep=8pt,
+        xleftmargin=0pt,
+        fontsize=\footnotesize,
+        breaklines=true,
+        breakanywhere=true,
+        highlightlines={3,8},
+        highlightcolor=yellow!20
+    },
+    colback=white,
+    colframe=blue!70!black,
+    boxrule=1pt,
+    arc=3pt,
+    outer arc=3pt,
+    left=15pt,
+    right=5pt,
+    top=5pt,
+    bottom=5pt,
+    drop shadow,
+    #1
+}
+
+\newtcblisting{gocode-bad}[1][]{
+    listing engine=minted,
+    listing only,
+    minted language=go,
+    minted style=tango,
+    minted options={
+        linenos=true,
+        numbersep=8pt,
+        xleftmargin=0pt,
+        fontsize=\footnotesize,
+        breaklines=true,
+        frame=leftline,
+        framesep=2mm,
+        rulecolor=\color{red!70!black}
+    },
+    enhanced,
+    colback=red!5,
+    colframe=red!70!black,
+    boxrule=1pt,
+    arc=3pt,
+    outer arc=3pt,
+    left=18pt,
+    right=5pt,
+    top=5pt,
+    bottom=5pt,
+    #1
+}
+
+\newtcblisting{gocode-elegant}[1][]{
+    listing engine=minted,
+    listing only,
+    minted language=go,
+    minted style=tango,
+    minted options={
+        linenos=true,
+        numbersep=8pt,
+        xleftmargin=0pt,
+        fontsize=\footnotesize,
+        breaklines=true,
+        frame=leftline,
+        framesep=2mm,
+        rulecolor=\color{green!50!black}
+    },
+    enhanced,
+    colback=green!5,
+    colframe=green!50!black,
+    boxrule=1pt,
+    arc=3pt,
+    outer arc=3pt,
+    left=18pt,
+    right=5pt,
+    top=5pt,
+    bottom=5pt,
+    #1
+}
+
+\begin{document}
+
+\title{Go Code Examples with Diverse Highlighting}
+\maketitle
+
+\section{GitHub Style (Light Theme)}
+Clean and professional appearance with line highlighting:
+
+\begin{gocode}[title={\textbf{Web Server Example}}]
+package main
+
+import (
+    "fmt"
+    "log"
+    "net/http"
+    "time"
+)
+
+func handler(w http.ResponseWriter, r *http.Request) {
+    fmt.Fprintf(w, "Hello, %s! Current time: %s",
+                r.URL.Path[1:], time.Now().Format(time.RFC3339))
+}
+
+func main() {
+    http.HandleFunc("/", handler)
+    log.Fatal(http.ListenAndServe(":8080", nil))
+}
+\end{gocode}
+
+\section{Elegant Minimal Style}
+Subtle left border with tango color scheme:
+
+\begin{gocode-elegant}[title={\textbf{Concurrent Processing Example}}]
+package main
+
+import (
+    "fmt"
+    "sync"
+    "time"
+)
+
+func worker(id int, wg *sync.WaitGroup) {
+    defer wg.Done()
+    fmt.Printf("Worker %d starting\n", id)
+    time.Sleep(time.Second)
+    fmt.Printf("Worker %d done\n", id)
+}
+
+func main() {
+    var wg sync.WaitGroup
+    for i := 1; i <= 3; i++ {
+        wg.Add(1)
+        go worker(i, &wg)
+    }
+    wg.Wait()
+    fmt.Println("All workers completed")
+}
+\end{gocode-elegant}
+
+\section{Bad code Style}
+Subtle left border with tango color scheme:
+
+\begin{gocode-bad}[title={\textbf{Concurrent Processing Example}}]
+// Package calculator provides mathematical operations for basic arithmetic.
+// It supports addition, subtraction, multiplication, and division operations
+// with proper error handling for edge cases like division by zero.
+package calculator
+
+import "fmt"
+
+// Add returns the sum of two integers.
+// It handles overflow by returning the mathematical result without bounds checking.
+func Add(a, b int) int {
+	return a + b
+}
+
+// Divide performs integer division and returns an error for division by zero.
+func Divide(a, b int) (int, error) {
+	if b == 0 {
+		return 0, fmt.Errorf("cannot divide %d by zero", a)
+	}
+	return a / b, nil
+}
+\end{gocode-bad}
+\end{document}
